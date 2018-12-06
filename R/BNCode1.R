@@ -9,7 +9,7 @@
 
 display <-function(){
   
-  Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape", "bnviewer","rjson","readr")
+  Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
   lapply(Packages, library, character.only = TRUE)
 
 
