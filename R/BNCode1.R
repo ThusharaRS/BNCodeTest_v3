@@ -193,9 +193,15 @@ Arcs_DF <- as.data.frame(arcs(BN_RLM_HC_9))
 Arcs_DF$Unique <- paste(Arcs_DF$from,Arcs_DF$to,sep = "-")
   
   Boot_Strength_8 <- boot.strength(RLM_Data_4vs5_4, cluster = NULL, R = 100, m = 50, algorithm = "hc", algorithm.args = list(), cpdag = TRUE, debug = FALSE)
- ab <- nrow(Boot_Strength_8)
-  
-  return(ab)
+ Boot_Strength_DF <- data.frame(From = Boot_Strength_8$from, To = Boot_Strength_8$to,
+                               strength = Boot_Strength_8$strength,
+                               direction = Boot_Strength_8$direction
+)
+
+Boot_Strength_DF$Unique <- paste(Boot_Strength_DF$From,Boot_Strength_DF$To,sep = "-")
+Arcs_BN <- merge(Arcs_DF,Boot_Strength_DF,by = "Unique")
+request.body <- toJSON(Arcs_BN[,-c(1:3,7)])
+  return(request.body)
 
 }
 
