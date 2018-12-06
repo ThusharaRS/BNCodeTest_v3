@@ -4,9 +4,6 @@
 #'@return data
 #'
 
-#Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape", "bnviewer","rjson","readr")
-#lapply(Packages, library, character.only = TRUE)
-
 display <-function(){
   
   Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
