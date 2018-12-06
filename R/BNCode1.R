@@ -187,8 +187,15 @@ ncol = 2, byrow = TRUE)
 
 Score_BN <- score(BN_RLM_HC_9,RLM_Data_4vs5_4)
 
+  acyclic(BN_RLM_HC_9, directed = FALSE, debug = FALSE)
+directed(BN_RLM_HC_9)
+Arcs_DF <- as.data.frame(arcs(BN_RLM_HC_9))
+Arcs_DF$Unique <- paste(Arcs_DF$from,Arcs_DF$to,sep = "-")
   
-  return(Score_BN)
+  Boot_Strength_8 <- boot.strength(RLM_Data_4vs5_4, cluster = NULL, R = 100, m = 50, algorithm = "hc", algorithm.args = list(), cpdag = TRUE, debug = FALSE)
+ ab <- nrow(Boot_Strength_8)
+  
+  return(ab)
 
 }
 
