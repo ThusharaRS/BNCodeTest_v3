@@ -9,8 +9,7 @@ display <-function(){
   Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
   lapply(Packages, library, character.only = TRUE)
 
-  print("ab")
-  print("cd")
+
   RLM_Data_4vs5_0 <- filter(RLM_Data, RLM_Data$KO_Consumption >= 4)[,c(201,26:39,194:200,209:358)]
   RLM_Data_4vs5_1 <- sapply(RLM_Data_4vs5_0,as.factor)
   RLM_Data_4vs5_2 <- as.data.frame(RLM_Data_4vs5_1)
