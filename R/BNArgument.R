@@ -5,7 +5,7 @@
 
 
 
-display <- function(MY_BL1,MY_WL1){
+getData <- function(MY_BL1,MY_WL1){
   # install.packages('bnlearn', dependencies=TRUE, repos='http://cran.rstudio.com/')
   # install.packages("GGally")
   # install.packages("network")
@@ -77,4 +77,4 @@ display <- function(MY_BL1,MY_WL1){
 
 
 
-#display(MY_BL1,MY_WL1)
+#getData(MY_BL1,MY_WL1)
