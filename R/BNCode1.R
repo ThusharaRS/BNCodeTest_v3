@@ -4,13 +4,13 @@
 #'@return data
 #'
 
-display <-function(MY_WL1,MY_BL1){
+display <-function(MY_WL2,MY_BL2){
   
   Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
   lapply(Packages, library, character.only = TRUE)
 
-  print(MY_WL1[1])
-  print(MY_BL1[1])
+  print(MY_WL2[1])
+  print(MY_BL2[1])
   RLM_Data_4vs5_0 <- filter(RLM_Data, RLM_Data$KO_Consumption >= 4)[,c(201,26:39,194:200,209:358)]
   RLM_Data_4vs5_1 <- sapply(RLM_Data_4vs5_0,as.factor)
   RLM_Data_4vs5_2 <- as.data.frame(RLM_Data_4vs5_1)
@@ -209,4 +209,4 @@ request.body <- toJSON(Arcs_BN[,-c(1:3,7)])
 
 }
 
-#display(MY_BL1,MY_WL1)
+#display(MY_WL2,MY_BL2)
