@@ -4,7 +4,7 @@
 #'@return data
 #'
 
-display <-function(MY_BL1,MY_WL1){
+display <-function(){
   
   Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
   lapply(Packages, library, character.only = TRUE)
