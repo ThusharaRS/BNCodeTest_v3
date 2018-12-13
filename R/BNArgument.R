@@ -5,7 +5,7 @@
 
 
 
-getData <- function(MY_BL1,MY_WL1){
+getData <- function(MY_BL2,MY_WL2){
   # install.packages('bnlearn', dependencies=TRUE, repos='http://cran.rstudio.com/')
   # install.packages("GGally")
   # install.packages("network")
@@ -21,9 +21,8 @@ getData <- function(MY_BL1,MY_WL1){
   Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape", "bnviewer","rjson","readr")
   lapply(Packages, library, character.only = TRUE)
 
-  MY_WL<-unlist(MY_WL1)
-  MY_BL<-unlist(MY_BL1)
-
+  MY_WL<-unlist(MY_WL2)
+  MY_BL<-unlist(MY_BL2)
 
   BL <- matrix(c(MY_BL
   ),
