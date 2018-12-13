@@ -24,6 +24,176 @@ display <-function(MY_BL1,MY_WL1){
 
   WL <- matrix(c(MY_WL), ncol = 2, byrow = TRUE)
   
+  print(WL[1])
+  BL <- matrix(c(## KO during media consumption at leisure
+  # "KO alone or by myself", "KO during media consumption at leisure",
+  #"Imagery KO is more refreshing than other soft drinks", "KO during media consumption at leisure",
+  #"Age Nets", "KO during media consumption at leisure",
+  #"Any Bev to renew my energy", "KO during media consumption at leisure",
+  "Any Bev to wake me up", "KO during media consumption at leisure",
+  #"Any Bev to ensure i drink enough each day", "KO during media consumption at leisure",
+  "KO in evening", "KO during media consumption at leisure",
+  #"Income Level", "KO during media consumption at leisure",
+  "SSD eating dinner away", "KO during media consumption at leisure",
+  "KO eating lunch away", "KO during media consumption at leisure",
+  "KO Consumption", "KO during media consumption at leisure",
+
+  ## KO alone or by myself
+  "KO during media consumption at leisure", "KO alone or by myself",
+  "Imagery KO is more refreshing than other soft drinks", "KO alone or by myself",
+  "Age Nets", "KO alone or by myself",
+  #"Any Bev to renew my energy", "KO alone or by myself",
+  #"Any Bev to wake me up", "KO alone or by myself",
+  "Any Bev to ensure i drink enough each day", "KO alone or by myself",
+  "KO in evening", "KO alone or by myself",
+  "Income Level", "KO alone or by myself",
+  "SSD eating dinner away", "KO alone or by myself",
+  "KO eating lunch away", "KO alone or by myself",
+  "KO Consumption", "KO alone or by myself",
+
+  ## Imagery KO is more refreshing than other soft drinks
+  #"KO during media consumption at leisure", "Imagery KO is more refreshing than other soft drinks",
+  "KO alone or by myself", "Imagery KO is more refreshing than other soft drinks",
+  # "Age Nets", "Imagery KO is more refreshing than other soft drinks",
+  #"Any Bev to renew my energy", "Imagery KO is more refreshing than other soft drinks",
+  #"Any Bev to wake me up", "Imagery KO is more refreshing than other soft drinks",
+  #"Any Bev to ensure i drink enough each day", "Imagery KO is more refreshing than other soft drinks",
+  "KO in evening", "Imagery KO is more refreshing than other soft drinks",
+  "Income Level", "Imagery KO is more refreshing than other soft drinks",
+  #"SSD eating dinner away", "Imagery KO is more refreshing than other soft drinks",
+  #"KO eating lunch away", "Imagery KO is more refreshing than other soft drinks",
+  "KO Consumption", "Imagery KO is more refreshing than other soft drinks",
+
+  ## Age Nets
+  "KO during media consumption at leisure", "Age Nets",
+  "KO alone or by myself", "Age Nets",
+  "Imagery KO is more refreshing than other soft drinks", "Age Nets",
+  "Any Bev to renew my energy", "Age Nets",
+  "Any Bev to wake me up", "Age Nets",
+  "Any Bev to ensure i drink enough each day", "Age Nets",
+  "KO in evening", "Age Nets",
+  "Income Level", "Age Nets",
+  "SSD eating dinner away", "Age Nets",
+  "KO eating lunch away", "Age Nets",
+  "KO Consumption", "Age Nets",
+
+  ## Any Bev to renew my energy
+  # "KO during media consumption at leisure", "Any Bev to renew my energy",
+  "KO alone or by myself", "Any Bev to renew my energy",
+  "Imagery KO is more refreshing than other soft drinks", "Any Bev to renew my energy",
+  "Age Nets", "Any Bev to renew my energy",
+  "Any Bev to wake me up", "Any Bev to renew my energy",
+  #"Any Bev to ensure i drink enough each day", "Any Bev to renew my energy",
+  # "KO in evening", "Any Bev to renew my energy",
+  # "Income Level", "Any Bev to renew my energy",
+  #"SSD eating dinner away", "Any Bev to renew my energy",
+  # "KO eating lunch away", "Any Bev to renew my energy",
+  "KO Consumption", "Any Bev to renew my energy",
+
+  ## Any Bev to wake me up
+  "KO during media consumption at leisure", "Any Bev to wake me up",
+  "KO alone or by myself", "Any Bev to wake me up",
+  "Imagery KO is more refreshing than other soft drinks", "Any Bev to wake me up",
+  "Age Nets", "Any Bev to wake me up",
+  #"Any Bev to renew my energy", "Any Bev to wake me up",
+  "Any Bev to ensure i drink enough each day", "Any Bev to wake me up",
+  "KO in evening", "Any Bev to wake me up",
+  # "Income Level", "Any Bev to wake me up",
+  "SSD eating dinner away", "Any Bev to wake me up",
+  "KO eating lunch away", "Any Bev to wake me up",
+  "KO Consumption", "Any Bev to wake me up",
+
+  ## Any Bev to ensure i drink enough each day
+  "KO during media consumption at leisure", "Any Bev to ensure i drink enough each day",
+  "KO alone or by myself", "Any Bev to ensure i drink enough each day",
+  #"Imagery KO is more refreshing than other soft drinks", "Any Bev to ensure i drink enough each day",
+  "Age Nets", "Any Bev to ensure i drink enough each day",
+  #"Any Bev to renew my energy", "Any Bev to ensure i drink enough each day",
+  "Any Bev to wake me up", "Any Bev to ensure i drink enough each day",
+  #"Any Bev to ensure i drink enough each day", "Any Bev to ensure i drink enough each day",
+  "KO in evening", "Any Bev to ensure i drink enough each day",
+  "Income Level", "Any Bev to ensure i drink enough each day",
+  "SSD eating dinner away", "Any Bev to ensure i drink enough each day",
+  "KO eating lunch away", "Any Bev to ensure i drink enough each day",
+  "KO Consumption", "Any Bev to ensure i drink enough each day",
+
+  ## KO in evening
+  "KO during media consumption at leisure", "KO in evening",
+  "KO alone or by myself", "KO in evening",
+  "Imagery KO is more refreshing than other soft drinks", "KO in evening",
+  "Age Nets", "KO in evening",
+  # "Any Bev to renew my energy", "KO in evening",
+  # "Any Bev to wake me up", "KO in evening",
+  # "Any Bev to ensure i drink enough each day", "KO in evening",
+  "Income Level", "KO in evening",
+  "SSD eating dinner away", "KO in evening",
+  "KO eating lunch away", "KO in evening",
+  "KO Consumption", "KO in evening",
+
+  ## Income Level
+  "KO during media consumption at leisure", "Income Level",
+  "KO alone or by myself", "Income Level",
+  "Imagery KO is more refreshing than other soft drinks", "Income Level",
+  # "Age Nets", "Income Level",
+  "Any Bev to renew my energy", "Income Level",
+  "Any Bev to wake me up", "Income Level",
+  "Any Bev to ensure i drink enough each day", "Income Level",
+  "KO in evening", "Income Level",
+  "SSD eating dinner away", "Income Level",
+  "KO eating lunch away", "Income Level",
+  "KO Consumption", "Income Level",
+
+  ## SSD eating dinner away
+  "KO during media consumption at leisure", "SSD eating dinner away",
+  "KO alone or by myself", "SSD eating dinner away",
+  #"Imagery KO is more refreshing than other soft drinks", "SSD eating dinner away",
+  "Age Nets", "SSD eating dinner away",
+  "Any Bev to renew my energy", "SSD eating dinner away",
+  "Any Bev to wake me up", "SSD eating dinner away",
+  # "Any Bev to ensure i drink enough each day", "SSD eating dinner away",
+  "KO in evening", "SSD eating dinner away",
+  "Income Level", "SSD eating dinner away",
+  "KO eating lunch away", "SSD eating dinner away",
+  "KO Consumption", "SSD eating dinner away",
+
+  ## KO eating lunch away
+  "KO during media consumption at leisure", "KO eating lunch away",
+  "KO alone or by myself", "KO eating lunch away",
+  #"Imagery KO is more refreshing than other soft drinks", "KO eating lunch away",
+  "Age Nets", "KO eating lunch away",
+  #"Any Bev to renew my energy", "KO eating lunch away",
+  "Any Bev to wake me up", "KO eating lunch away",
+  #"Any Bev to ensure i drink enough each day", "KO eating lunch away",
+  "KO in evening", "KO eating lunch away",
+  "Income Level", "KO eating lunch away",
+  "SSD eating dinner away", "KO eating lunch away",
+  "KO Consumption", "KO eating lunch away",
+
+  ## KO Consumption
+  # "KO during media consumption at leisure", "KO Consumption",
+  "KO alone or by myself", "KO Consumption",
+  "Imagery KO is more refreshing than other soft drinks", "KO Consumption",
+  # "Age Nets", "KO Consumption",
+  # "Any Bev to renew my energy", "KO Consumption",
+  # "Any Bev to wake me up", "KO Consumption",
+  # "Any Bev to ensure i drink enough each day", "KO Consumption",
+  "KO in evening", "KO Consumption",
+  # "Income Level", "KO Consumption",
+  "SSD eating dinner away", "KO Consumption",
+  "KO eating lunch away", "KO Consumption"
+
+
+),
+ncol = 2, byrow = TRUE)
+# BL
+
+WL <- matrix(c("KO during media consumption at leisure", "KO Consumption",
+               "KO alone or by myself", "KO during media consumption at leisure"
+),
+ncol = 2, byrow = TRUE)
+# WL
+ 
+  
   BN_RLM_HC_9 <- hc(RLM_Data_4vs5_4, score = "aic", whitelist = WL, blacklist = BL)
 
 Score_BN <- score(BN_RLM_HC_9,RLM_Data_4vs5_4)
