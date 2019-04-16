@@ -8,7 +8,7 @@
 #rm(list=ls())
 #Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
 #lapply(Packages, library, character.only = TRUE)
-display <-function(a,b){
+display <-function(){
   
   Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
   lapply(Packages, library, character.only = TRUE)
