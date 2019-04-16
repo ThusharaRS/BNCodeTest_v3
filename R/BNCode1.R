@@ -8,7 +8,7 @@
 #rm(list=ls())
 #Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
 #lapply(Packages, library, character.only = TRUE)
-display1 <-function(a,b){
+display <-function(a,b){
   
   Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
   lapply(Packages, library, character.only = TRUE)
@@ -212,4 +212,4 @@ request.body <- toJSON(Arcs_BN[,-c(1:3,7)])
 
 }
 
-#display1(MY_WL2,MY_BL2)
+#display(MY_WL2,MY_BL2)
