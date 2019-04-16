@@ -9,6 +9,9 @@ Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
 lapply(Packages, library, character.only = TRUE)
 
 displayJson <- function(blList, wlList) {
+  
+  blList<-"KO during media consumption at leisure,KO Consumption"
+  wlList<-"Age Nets,KO Consumption"
   myVector_WL<-unlist(strsplit(wlList,","))
   myVector_BL<-unlist(strsplit(blList,","))
 
