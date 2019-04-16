@@ -5,7 +5,7 @@
 
 
 rm(list=ls())
-Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape", "bnviewer","rjson")
+Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
 lapply(Packages, library, character.only = TRUE)
 
 displayJson <- function(blList, wlList) {
