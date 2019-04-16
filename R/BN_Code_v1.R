@@ -18,10 +18,6 @@ displayJson <- function(blList, wlList) {
   #Data <- read.csv("D:/Bayesian Tool/2. Clean Data/Respondent Level Data_Consumption Segments.csv")
   #Mapping <- read.csv("D:/Bayesian Tool/2. Clean Data/SOB Mapping File.csv")
 
-  data(Data)
-  data(Mapping)
-
-
   Data_0 <- filter(Data, Data$KO_Consumption_4_5 != 99)
   names(Data_0) = Mapping$New_Variable[match(names(Data_0), Mapping$Old_Variable)]
 
