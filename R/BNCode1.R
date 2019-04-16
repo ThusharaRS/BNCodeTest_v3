@@ -1,4 +1,4 @@
-#'First 6 Line  Code Testing
+#'Json without paramenter
 #'
 #'@export
 #'@return data
