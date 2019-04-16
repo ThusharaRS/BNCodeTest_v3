@@ -8,7 +8,7 @@ rm(list=ls())
 Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape", "bnviewer","rjson")
 lapply(Packages, library, character.only = TRUE)
 
-display <- function(blList, wlList) {
+displayJson <- function(blList, wlList) {
   myVector_WL<-unlist(strsplit(wlList,","))
   myVector_BL<-unlist(strsplit(blList,","))
 
@@ -62,4 +62,4 @@ display <- function(blList, wlList) {
   #return (myVector)
 }
 #display(bl,wl)
-display("KO during media consumption at leisure,KO Consumption", "Age Nets,KO Consumption")
+displayJson("KO during media consumption at leisure,KO Consumption", "Age Nets,KO Consumption")
