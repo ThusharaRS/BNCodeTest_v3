@@ -5,13 +5,13 @@
 #'
 
 
-rm(list=ls())
-Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
-lapply(Packages, library, character.only = TRUE)
+#rm(list=ls())
+#Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
+#lapply(Packages, library, character.only = TRUE)
 display1 <-function(a,b){
   
-  #Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
-  #lapply(Packages, library, character.only = TRUE)
+  Packages <- c("plyr", "dplyr", "tidyr", "bnlearn", "reshape","rjson","readr")
+  lapply(Packages, library, character.only = TRUE)
 
 
   RLM_Data_4vs5_0 <- filter(RLM_Data, RLM_Data$KO_Consumption >= 4)[,c(201,26:39,194:200,209:358)]
